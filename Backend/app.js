@@ -3,6 +3,7 @@ import "dotenv/config"
 import routesUsers from './routes/users.js'
 import routesCategories from './routes/categories.js'
 import routesSkins from './routes/skins.js'
+import routesCarts from './routes/carts.js'
 import bodyParser from 'body-parser'
 import dbClient from './config/db.js'
 
@@ -14,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/users', routesUsers)
 app.use('/categories', routesCategories)
 app.use('/skins', routesSkins)
+app.use('/carts', routesCarts)
 
 try {
     const PORT = process.env.PORT || 3000
