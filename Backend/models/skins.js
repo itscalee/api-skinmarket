@@ -1,5 +1,4 @@
 import Skin from '../schemas/skins.js'
-import Category from '../schemas/categories.js'
 import mongoose from 'mongoose'
 
 class skinsModel {
